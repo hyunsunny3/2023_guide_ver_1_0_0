@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+/* *********************************
+**                                **
+**              Font              **
+**                                **
+********************************* */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+@font-face {
+  font-family: "Gellix";
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+  src: url(//ecimg.cafe24img.com/pg422b45788074092/vemall/font/Gellix-Regular.ttf)
+    format("truetype");
+}
+@font-face {
+  font-family: "Gellix-M";
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+  src: url(//ecimg.cafe24img.com/pg422b45788074092/vemall/font/Gellix-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Gellix-L";
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+  src: url(//ecimg.cafe24img.com/pg422b45788074092/vemall/font/Gellix-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Gellix-SB";
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+  src: url(//ecimg.cafe24img.com/pg422b45788074092/vemall/font/Gellix-SemiBold.ttf)
+    format("truetype");
+}
+
+/* *********************************
+**                                **
+**              Reset             **
+**                                **
+********************************* */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+a,
+button {
+  cursor: revert;
+}
+
+main,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: normal;
+}
+
+ul,
+ol,
+li,
+menu {
+  margin: 0;
+  list-style: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+button,
+textarea,
+input,
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+button {
+  touch-action: manipulation; /* 확대 제스처는 작동하나 두번 클릭 시 확대 축소 안됨 (확대축소를 'none'으로 막을 경우 접근성 위반) */
+  -ms-touch-action: manipulation;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  border: 0;
+  outline: none;
+  background: none;
+}
+
+input:autofill,
+input:-webkit-autofill {
+  /* 인풋 입력창 자동완성 시 */
+  box-shadow: 0 0 0 100px #fff inset;
+  -moz-box-shadow: 0 0 0 100px #fff inset;
+  -webkit-box-shadow: 0 0 0 100px #fff inset;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input,
+textarea {
+  user-select: auto;
+  -webkit-user-select: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+::placeholder {
+  font-size: 15px;
+  font-weight: normal;
+  color: #000;
+}
+
+textarea {
+  resize: vertical;
+}
+
+select {
+  border: 1px solid rgba(84, 86, 90, 0.2);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: url("//ecimg.cafe24img.com/pg422b45788074092/vemall/img/pc/select_arr.webp") no-repeat
+    right 23px center;
+  background-size: 12px;
+}
+select::-ms-expand {
+  /* select 기본화살표 없앰 */
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::selection {
+  /* 텍스트 드레그 시 스타일 */
+  color: #fff;
+  background: rgba(0, 0, 0, 0.99);
+}
+
+button,
+textarea,
+input,
+select,
+a,
+*:focus,
+a:hover,
+button:hover,
+input:hover,
+a *:hover {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+a,
+span,
+strong,
+b,
+em,
+button {
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: baseline;
+  outline: none;
+  border: 0;
+}
+
+/* *********************************
+**                                **
+**          Common Class          **
+**                                **
+********************************* */
+
+/* *********************************
+**                                **
+**             Custom             **
+**                                **
+********************************* */
+
+/* Scroll bar */
+::-webkit-scrollbar {
+}
+::-webkit-scrollbar-thumb {
+}
+::-webkit-scrollbar-track {
+}
+
+/* Input [Radio] */
+
+/* Input [Checkbox] */
+
+/* Selectbox */
+
+/* Button */
